@@ -8,9 +8,9 @@ const actions = ['travels to the ends of the Earth', 'fights through a horde of 
 const reasons = ['to stop an evil robot', 'to learn the power of friendship', 'to start a new life on a farm', 'to save their dad', 'to eat a really big burrito'];
 
 // generate a number between 0 - array.length (for each array)
-let subject  = Math.floor(Math.random() * subjects.length);
-let action  = Math.floor(Math.random() * actions.length);
-let reason  = Math.floor(Math.random() * reasons.length);
+let subject  = subjects[Math.floor(Math.random() * subjects.length)];
+let action  = actions[Math.floor(Math.random() * actions.length)];
+let reason  = reasons[Math.floor(Math.random() * reasons.length)];
 
 // build out the result string
 let result = `${subject} ${action} ${reason}.`;
