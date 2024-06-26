@@ -16,4 +16,6 @@ let reason  = reasons[Math.floor(Math.random() * reasons.length)];
 let result = `${subject} ${action} ${reason}.`;
 
 // display
-console.log(result);
+console.log('\n---Game Idea Generator---\n')
+console.log('Your game idea:')
+console.log(result + '\n');
